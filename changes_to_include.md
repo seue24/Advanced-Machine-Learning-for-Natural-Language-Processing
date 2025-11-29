@@ -1,4 +1,3 @@
-- Change text so it does not say the official Pytorch repo
 - Change beam size to 3
 
 The following function performs the caption generation using the pretrained SAT model. For preprocessing, the input image is resized to 256×256, converted to RGB if necessary, scaled to the [0,1] range, and normalized with ImageNet statistics so it matches the ResNet-101 encoder described above. The encoded image features are then passed to the SAT decoder, which works as outlined above: The decoder applies the learned attention mechanism over the 14×14 spatial feature grid and generates one word at a time using the LSTM.
