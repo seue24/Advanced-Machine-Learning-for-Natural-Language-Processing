@@ -10,3 +10,8 @@ The function returns the highest-scoring caption together with the corresponding
 ---
 
 (The attention comparison highlights a key architectural difference between SAT and ViT-GPT2. SAT shows sharply localized attention peaks due to its CNN-based feature grid and stepwise soft-attention mechanism, while ViT-GPT2 distributes attention across many patches, reflecting the transformer’s global receptive field.) Based on these visualizations, we assume that the pixel-level perturbations used in AICAttack will not transfer directly. Targeting a small set of high-attention regions works well for SAT, but ViT-GPT2’s more diffuse attention most likely makes localized perturbations less disruptive. Therefore, it is likely that we require larger perturbation regions to achieve similar results as seen in the AIC Attack paper.
+
+---
+
+- Order for SAT cells must be slightly different
+- Duplicate cell in the attack must be removed
